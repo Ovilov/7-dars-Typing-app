@@ -22,7 +22,7 @@ body {
 }
 .card {
   background-color: inherit;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(50px);
   color: rgb(240, 130, 4);
   width: 800px;
   height: 600px;
