@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/mustang.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 1px 67px 11px rgba(25, 217, 78, 0.75) inset;
+  -webkit-box-shadow: 1px 1px 67px 11px rgba(25, 217, 78, 0.75) inset;
+  -moz-box-shadow: 1px 1px 67px 11px rgba(25, 217, 78, 0.75) inset;
+}
+.card {
+  background-color: inherit;
+  backdrop-filter: blur(10px);
+  color: rgb(240, 130, 4);
+  width: 800px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+  border-radius: 15px;
+  position: relative;
+}
+.game__title {
+  font-weight: 900;
+  font-size: 50px;
+}
+.random__word {
+  font-size: 30px;
+  color: aqua;
+}
+.input {
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  width: 500px;
+  height: 60px;
+  padding-left: 25px;
+  padding-right: 50px;
+  position: relative;
+  font-size: 25px;
+  font-family: cursive;
+}
+.icon {
+  margin-top: 140px;
+  margin-left: 450px;
+  position: absolute;
+  font-size: 64px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/smile.png");
+}
+.score__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 250px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.modal {
+  background-color: rgb(97, 156, 245);
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 100;
+}
+.modal__title {
+  font-size: 32px;
+}
+.score__description {
+  font-size: 28px;
+}
+
+.btn {
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  font-size: 24px;
+  cursor: pointer;
+  color: aqua;
+  background-color: blueviolet;
+  transition: background 0.5s;
+  &:hover {
+    background-color: rgb(3, 71, 73);
+  }
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+.hidden {
+  display: none;
+}
+
+.level {
+  width: 100px;
+  border-radius: 8px;
+  height: 30px;
+}

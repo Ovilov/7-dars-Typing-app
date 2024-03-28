@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing</title>
+    <script type="module" defer src="./js/app.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <select class="level" name="" id="change__level">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <h1 class="game__title">Random Word Game</h1>
+      <h3 class="random__word">apple</h3>
+      <input class="input" type="text" />
+      <p class="icon" />
+      <p></p>
+      <div class="score__wrapper">
+        <p>Score : <span class="user__score">0</span></p>
+        <p>Time : <span class="user__time">10 s</span></p>
+      </div>
+    </div>
+    <div class="modal hidden" id="modal">
+      <h2 class="modal__title">Game Over !</h2>
+      <p class="score__description">
+        Score : <span class="user__score score">0</span>
+      </p>
+      <button class="btn" id="btn">Play Again</button>
+    </div>
+
+    <div class="overlay hidden" id="overlay"></div>
+  </body>
+</html>
